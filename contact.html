@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style media="screen">
+            #a:hover{
+                      background-color: black;
+                      color: white;}
+                      
+                      
+    </style>
+  </head>
+
+
+
+  <body  style="background-color:black;">
+
+    <header>
+      <img src="/tesla-logo-png-6.png" alt="" style="height: 24px; width: 4%; margin-top: 8px; ">
+      <b style="color:white; font-size:28px;">|</b>
+      <a href="/" style=" text-decoration:none; color:lightyellow; margin-top: 0px;padding:0;font-size:28px;top:0px;"><b>HOME</b></a>
+
+    </header>
+    <h1 style="color:red; margin-left:35% ">Contact US</h1>
+    <br><br><br>
+    <div style="display:flex; flex-wrap:wrap;">
+    <div style="width:50%;">
+    <form class="" action="/contact1" method="post" >
+      <label style="color:white; font-size:28px;">First Name</label><br><input type="text" name="fname" id="fname" value="" style="width:68%; height:35px; border-radius:8px;" required oninput="return validateForm()">
+      <br>
+      <label style="color:white; font-size:28px;">Last Name</label><br><input type="text" name="lname"  id="lname" value="" style="width:68%; height:35px; border-radius:8px;" required oninput="return validateForm()">
+      <br>
+      <label style="color:white; font-size:28px;">Contact</label><br><input type="text" name="contact"  id="contact" value="" style="width:68%; height:35px; border-radius:8px;">
+      <br>
+      <label style="color:white; font-size:28px;">Email</label><br><input type="text" name="email"  id="email" value="" style="width:68%; height:35px; border-radius:8px;" required oninput="return validateForm()">
+      <br>
+      <label style="color:white; font-size:28px;">Query</label><br><input type="text" name="query" id="query" value="" style="width:68%; height:145px; border-radius:8px;" required oninput="return validateForm()">
+      <br>
+      <br>
+      <button type="submit" name="submit" style="height:46px;       width:50%; margin-left:28px;  border-radius:16px; color:red;" id="a" ">Submit</button>
+
+
+    </form>
+
+    </div>
+    <div style="color:white;">
+          <h1 style="color:white">Details for contacting us by phone </h1>
+
+          <h2>1-877-798-3752</h2>
+
+    </div>
+    </div>
+  <script>function validateForm() {
+    var x = document.forms["myform"]["fname"].value;
+    var xx = document.forms["myform"]["email"].value;
+     var xxx =document.forms["myform"]["lname"].value;
+     var aa = document.forms["myform"]["query"].value;
+  
+    if (x == "") {
+      document.getElementById("fname").setCustomValidity("firstname is required");
+      return false;
+    }
+    else
+    {
+      document.getElementById("fname").setCustomValidity("");
+      return true;
+         
+    }
+    if (xx == "") {
+      document.getElementById("email").setCustomValidity("email is required");
+      return false;
+    }
+    else
+    {
+      document.getElementById("email").setCustomValidity("");
+      return true;
+         
+    }
+    if (xxx == "") {
+      document.getElementById("lname").setCustomValidity("lastname is required");
+      return false;
+    }
+    else
+    {
+      document.getElementById("lname").setCustomValidity("");
+      return true;
+         
+    }
+    if (aa == "") {
+      document.getElementById("query").setCustomValidity("please fill an query to procced");
+      return false;
+    }
+    else
+    {
+      document.getElementById("query").setCustomValidity("");
+      return true;
+         
+    }
+  }
+  </script>
+  </body>
+</html>

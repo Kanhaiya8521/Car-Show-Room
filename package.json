@@ -1,0 +1,26 @@
+{
+  "name": "tesla-car-showroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishabhkushwaha07/tesla-car-showroom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rishabhkushwaha07/tesla-car-showroom/issues"
+  },
+  "homepage": "https://github.com/Rishabhkushwaha07/tesla-car-showroom#readme",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.25",
+    "wow.js": "^1.2.2"
+  }
+}
